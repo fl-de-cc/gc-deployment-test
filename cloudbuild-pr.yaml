@@ -1,6 +1,6 @@
 options:
   logging: CLOUD_LOGGING_ONLY
-  machineType: 'N2_STANDARD_2'
+  machineType: 'N1_HIGHCPU_8'
   dynamicSubstitutions: true
 substitutions:
   _APPLICATION_NAME: 'recova-dp'
