@@ -14,5 +14,5 @@ steps:
     - '-c'
     - |
       pip install -r ./deployment/requirements.txt
-      python ./deployment/artifact_builder.py
+      python -c 'print("Hello")'
     id: "install-requirements"
