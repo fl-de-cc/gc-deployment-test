@@ -6,6 +6,8 @@ timeout: '1800s'
 steps:
   - name: 'python:3.10-slim'
     entrypoint: '/bin/bash'
+    env:
+      - 'GOOGLE_APPLICATION_CREDENTIALS=./deployment/application_default_credentials.json'
     args:
     - '-c'
     - |
