@@ -9,6 +9,5 @@ steps:
     args:
     - '-c'
     - |
-      pip install -r ./deployment/requirements.txt
       python -c 'print("Hello")'
     id: "install-requirements"
