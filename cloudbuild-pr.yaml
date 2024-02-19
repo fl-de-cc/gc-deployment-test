@@ -9,5 +9,5 @@ steps:
     args:
     - '-c'
     - |
-      python -c  'print("Hello")'
+      python -c 'print("Hello")'
     id: "install-requirements"
