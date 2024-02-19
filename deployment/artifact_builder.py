@@ -142,18 +142,21 @@ if __name__ == "__main__":
     artifacts_bucket = "dataproc-staging-europe-west3-28831740628-ocrcx1tc" # "dataproc-staging-europe-west3-1074763801763-eggw1bmc"  #
     template_id = "template-4"
 
-    create_workflow(
-       region,
-       project_id,
-       cluster_name,
-       service_account,
-       artifacts_bucket,
-       template_id,
-    )
+    try:
+        create_workflow(
+           region,
+           project_id,
+           cluster_name,
+           service_account,
+           artifacts_bucket,
+           template_id,
+        )
 
-    schedule_pipeline_execution(
-        region,
-        project_id,
-        template_id,
-        service_account,
-    )
+        schedule_pipeline_execution(
+            region,
+            project_id,
+            template_id,
+            service_account,
+        )
+    except Exception as err:
+        print(f"{err=}")
