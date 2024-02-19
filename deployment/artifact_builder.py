@@ -123,7 +123,7 @@ def schedule_pipeline_execution(
     )
 
     print("Deleting job ... ") # TODO Check first if exists...
-    client.delete_job(scheduler_v1.DeleteJobRequest(name=job_name))
+    #client.delete_job(scheduler_v1.DeleteJobRequest(name=job_name))
     print("Creating job ... ")
     response = client.create_job(
         scheduler_v1.CreateJobRequest(
